@@ -1,0 +1,28 @@
+{
+  "arm_side": "left",
+  "main_preview_matches_calibration": false,
+  "table_point_left_base_m": [
+    0.3499703813968621,
+    0.25506339630168867,
+    -0.026695688103588355
+  ],
+  "table_normal_left_base": [
+    -0.043635794735641734,
+    -0.008554356255000214,
+    0.9990108810252528
+  ],
+  "source_sha256": "55695184a30f5dc45622708161209e8c940622a466a12d070a7104700c8076d3",
+  "source_camera_serial": "260422274897",
+  "fit": {
+    "source": "Single local depth frame transformed with the unverified QZ extrinsics",
+    "sampled_points": 33382,
+    "inliers_within_12mm": 14764,
+    "median_absolute_residual_mm": 14.095892223219295,
+    "measured_normal_angle_from_base_Z_deg": 2.5485766556483296
+  },
+  "approximate_x_surface_left_base_m": [
+    0.42822417443525096,
+    0.16537239729969286,
+    -0.024045649207854236
+  ]
+}

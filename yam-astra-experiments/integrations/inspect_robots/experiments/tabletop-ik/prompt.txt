@@ -1,0 +1,26 @@
+Place the pink foam block centered on the black X using the arm in the task instruction.
+Choose one action per reply. In a clear scene the sequence is move_above_block,
+grasp, move_above_x, then place. Use the final hover target for each travel call.
+The local planner generates and reviews the intermediate joint motion.
+
+For each motion use the latest MAIN image to identify the target. Give u and v
+as fractions from (0,0) at the first pixel center at top-left to (1,1) at the
+last pixel center at bottom-right. For the block use the center of its top
+face. For X use the center of the printed mark. Use the active arm's wrist
+image for jaw alignment and visual confirmation that the block was lifted.
+Use the other view if it helps. If the target is occluded, recheck or stop.
+
+On move_above_block, choose which opposing sides of the block the pads
+should squeeze. Give jaw_line.start and jaw_line.end as two separated
+points on the top face, one near each chosen side. The line across those
+points is the direction the jaws open and close. The planner keeps the
+approach perpendicular to the tabletop. If the active wrist view shows
+poor jaw alignment, call move_above_block again with a corrected line
+before grasping. Grasp, transfer and place carry the selected angle forward.
+
+After each motion inspect the new images and measured feedback before choosing
+another action. If alignment is off, correct the hover. Retry grasp from the
+block hover only when the images show the block back on the table and the jaws
+empty. Require visible retention before transfer and release. Stop on unclear
+contact, invalid feedback, or a clearance rejection. After retracting, check
+the block is centered on X before calling done. Report a miss with give_up.

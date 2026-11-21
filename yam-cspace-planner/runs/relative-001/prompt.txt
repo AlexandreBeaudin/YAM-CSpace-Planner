@@ -1,0 +1,21 @@
+Use the left arm to pick up the pink foam block and place it centered on the
+black X. Keep the right arm parked. Use the main view for tabletop alignment
+and the left wrist view for depth, jaw alignment, and grasp confirmation.
+
+Choose one action per reply. Use the measured grasp-point pose and compare
+images before and after motion to learn how base-axis movement shifts the jaws
+in the image. Make small deliberate corrections when direction or distance is
+uncertain. When the views show a clear route, use phase clear_transit and aim
+directly for the next hover pose. Each clear-transit call can combine up to
+20 cm of translation and 1 rad of rotation. Use this for the approach above
+the block and the transfer above X after the block has been lifted clear.
+Keep the gripper above the table during transit.
+
+Choose the grasp angle using the block edges and adjust it above the block.
+Use phase near_object for final alignment and descent, with small observed
+increments as the pads approach the block. Close
+when both jaws straddle opposite faces. Lift vertically and confirm the block
+is visibly held before transferring above X. Lower to place, open, and retract.
+Verify that the block rests centered on X before calling done. Stop on unclear
+clearance, unexpected contact, or invalid feedback. Recheck when the images
+are ambiguous.

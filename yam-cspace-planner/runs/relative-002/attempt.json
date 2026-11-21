@@ -1,0 +1,21 @@
+{
+  "started_time_ns": 1795293178568604118,
+  "channels": {
+    "left": "can_yam_l",
+    "right": "can_yam_r"
+  },
+  "active_arm": "left",
+  "task_id": "tabletop-relative",
+  "instruction": "Place the pink foam block centered on the black X with the left arm.",
+  "replay_title": "Foam block relative EEF pick-and-place",
+  "prompt_sha256": "913f6d7d55bafce47d5fa8d0f8e1be16f3f6ceb573f29c33c0618fc68c45bd21",
+  "runner_sha256": "fc341534ddab649114a2007d85cb72ea51abd6e694e1470789e02bcf399c0a13",
+  "max_llm_calls": 180,
+  "max_seconds": 2400,
+  "max_steps": 5400,
+  "model_timeout_s": 600.0,
+  "model_attempts": 4,
+  "resume_source": null,
+  "calibration_required": false,
+  "grasp_example_required": false
+}

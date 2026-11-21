@@ -1,0 +1,48 @@
+{
+  "source": "gpt-6-astra",
+  "turns": [
+    {
+      "turn": 1,
+      "observation": {
+        "gripper_xyz_m": [
+          0.25,
+          -0.2,
+          0.18
+        ],
+        "above_block_xyz_m": [
+          0.43,
+          -0.1,
+          0.1
+        ],
+        "above_x_xyz_m": [
+          0.4,
+          0.17,
+          0.1
+        ],
+        "workspace_m": {
+          "x_m": [
+            0.15,
+            0.55
+          ],
+          "y_m": [
+            -0.3,
+            0.3
+          ],
+          "z_m": [
+            0.07,
+            0.35
+          ]
+        },
+        "hover_tolerance_m": 0.015,
+        "block_state": "on_table",
+        "last_result": null
+      },
+      "error": "HTTP Error 502: Bad Gateway",
+      "gateway_error": "{\"error\":{\"message\":\"Upstream access forbidden, please contact administrator\",\"type\":\"upstream_error\"}}",
+      "model_seconds": 2.387
+    }
+  ],
+  "model_calls": 1,
+  "placed_on_x": false,
+  "four_action_success": false
+}

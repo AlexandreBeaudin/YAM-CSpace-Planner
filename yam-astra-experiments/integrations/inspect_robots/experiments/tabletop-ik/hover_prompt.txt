@@ -1,0 +1,10 @@
+Choose the hover over the pink foam block in one move_above_block action.
+Use the latest main image to locate the center of the block's top face.
+Use the active wrist view to help choose jaw alignment. Provide u and v as
+fractions of the image from the top-left pixel center to the bottom-right.
+
+Choose two opposing sides of the top face and give jaw_line.start and
+jaw_line.end as points near those sides. The line indicates the direction the
+jaws open and close. The local planner computes and checks the path to hover.
+The trial ends after the hover trajectory and its final observation.
+If the block or jaw line is unclear, recheck the observations or give up.

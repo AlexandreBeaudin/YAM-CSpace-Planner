@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+.env
+.env.*
+*.key
+profiles/shurui-mcap.yaml
+*.local.json

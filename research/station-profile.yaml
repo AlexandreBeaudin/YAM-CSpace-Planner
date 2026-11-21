@@ -1,0 +1,20 @@
+name: rhos-nuc-3
+schema_version: 1
+arms:
+  left: /home/rhos/.config/yam/setup/version-a0a265371ebd9dbd/left.yaml
+  right: /home/rhos/.config/yam/setup/version-a0a265371ebd9dbd/right.yaml
+cameras:
+  config: /home/rhos/.config/yam/setup/version-a0a265371ebd9dbd/cameras.yaml
+  required: true
+network:
+  host: 127.0.0.1
+  hardware_port: 6001
+  safety_port: 6002
+daemon_repo_root: /home/rhos/workspace/YAM/gello_software
+safety:
+  motors_per_arm: 7
+  profile: yam-v1
+  watchdog_ms: 400
+storage:
+  min_free_gb: 50
+  root: /home/rhos/workspace/jiaxin/shurui/recordings

@@ -1,0 +1,14 @@
+{
+  "http_attempts": 8,
+  "physical_success": "unverified",
+  "completed_cartesian_actions": [
+    "move_eef_by",
+    "move_eef_by",
+    "move_eef_by"
+  ],
+  "evaluation_completed": false,
+  "model_termination_reasons": [],
+  "model_termination_details": [],
+  "final_hold_confirmed": true,
+  "ended_time_ns": 1795293494625705904
+}
